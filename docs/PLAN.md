@@ -46,7 +46,7 @@ OSG Communities (Neon CRM) needs a fast roll-call app for event attendance and h
 - `worker/index.ts`, `worker/routes/{events,attendance,people,neon,admin}.ts`, `worker/lib/{auth,neon,suggest}.ts`
 - `migrations/0001_init.sql`
 - `app/` — `main.tsx`, `pages/{RollCall,History,Admin}.tsx`, `lib/{api,offlineQueue,firebase}.ts`, `manifest.webmanifest`, `sw.ts`
-- `README.md` — **comprehensive, written first on exit from plan mode** (overview, features, architecture diagram, data model, API reference, Neon integration notes incl. read-only `markedAttended` and time-sheet limits, privacy stance: no DOB/address in D1, prerequisites, local dev, secrets/`wrangler secret`, D1 migrations, Firebase setup + admin claims script, deploy, testing, PWA install, backup/export, troubleshooting, roadmap/phases, contributing). Repo is not yet initialized; user will `git init`/push themselves, so add `.gitignore` (node_modules, .wrangler, .dev.vars, dist).
+- `README.md` — comprehensive project documentation (overview, features, architecture diagram, data model, API reference, Neon integration notes incl. read-only `markedAttended` and time-sheet limits, privacy stance: no DOB/address in D1, prerequisites, local dev, secrets/`wrangler secret`, D1 migrations, Firebase setup + admin claims script, deploy, testing, PWA install, backup/export, troubleshooting, roadmap/phases, contributing). Plus `.gitignore` (node_modules, .wrangler, .dev.vars, dist). Both are committed along with this plan.
 
 ## Phases
 1. **MVP**: schema, auth, people search/add, roll call + hours, history by date range/edit, PWA install + offline queue. (No Neon yet — seed people via CSV import.) Includes totals of volunteer hours per range.
